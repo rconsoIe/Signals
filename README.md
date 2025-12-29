@@ -146,7 +146,9 @@ Signals.clear("HealthChanged")
 
 Signals supports optional debug logging.
 
+```
 Signals.debug = true
+```
 
 When enabled, Signals will print:
 - listener registration
@@ -188,11 +190,13 @@ Avoid using Signals for:
 
 ## Example (realistic)
 
+```
 Signals.on("InventoryUpdated", function(inv)
     print("inventory size:", #inv)
 end)
 
 Signals.emit("InventoryUpdated", inventoryTable)
+```
 
 ---
 
